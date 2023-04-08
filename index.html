@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de texto personalizado</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Editor de texto personalizado</h1>
+    <div class="editor">
+      <div contenteditable="true" class="editable" id="editable"></div>
+      <div class="options">
+        <button id="bold" title="Negritas">B</button>
+        <button id="italic" title="Itálicas">I</button>
+        <button id="underline" title="Subrayado">U</button>
+        <div class="dropdown">
+          <button class="dropbtn">Fuente</button>
+          <div class="dropdown-content">
+            <a href="#" id="font1">Arial</a>
+            <a href="#" id="font2">Verdana</a>
+            <a href="#" id="font3">Times New Roman</a>
+          </div>
+        </div>
+      </div>
+      <button class="copy" data-clipboard-target="#editable">
+        <span>Copiar texto</span>
+      </button>
+    </div>
+    <p>Modifica el texto usando los botones y luego presiona "Copiar texto" para copiarlo al portapapeles. Luego, pégalo en LinkedIn o cualquier otro lugar.</p>
+  </div>
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
